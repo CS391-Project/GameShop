@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Game Shop</title>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<header>
+    <h1>Game Shop</h1>
+</header>
+
+<nav>
+    <a href="game_Shop.html">Shop</a>
+    <a href="basket.html">Basket</a>
+</nav>
+
+<section>
+
+    <h1>Shop</h1>
+    <table id="Items">
+    <script> fill_items()</script>
+    </table>
+
+</section>
+
+<aside>
+
+    <h2>Categories</h2>
+    <div id="categories"></div>
+    <button onclick="apply_filter()">Apply Filter</button>
+    <script>
+        fill_category()
+    </script>
+
+</aside>
+
+<footer>
+
+    <p> Best games for best prices</p>
+
+</footer>
+
+</html>
