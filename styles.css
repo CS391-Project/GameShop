@@ -1,0 +1,54 @@
+header {
+    background-color: deepskyblue;
+}
+
+header>h1 {
+    color: white;
+    font-size: 30;
+    text-align: center;
+}
+
+nav {
+    background-color: deepskyblue;
+}
+
+nav>a {
+    color: white;
+    font-size: 20;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: deepskyblue;
+}
+
+footer>p {
+    color: white;
+    font-size: 15;
+    text-align: center;
+}
+
+section {
+    position: absolute;
+    left: 10%;
+}
+
+aside {
+    position: absolute;
+    left: 0;
+    font-size: 15;
+}
+
+img {
+    width: 300;
+    height: 300;
+    float: right;
+}
+
+table, td {
+    border: 1px solid deepskyblue;
+    border-collapse: collapse;
+}
