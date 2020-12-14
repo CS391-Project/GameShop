@@ -102,15 +102,13 @@ function getPrice(item_id){
     var ivalue = item_list[item_id]
     var ipvalue = ivalue.split(',')
     var val = ipvalue[2]
+    val += ' TL'
     document.getElementById("price").innerText = val;
 }
 function getLink(item_id){
     var ivalue = item_list[item_id]
     var ipvalue = ivalue.split(',')
     var val = ipvalue[3]
-   // var colorThief = new ColorThief();
-    //colorThief.getColor('Resources/'+val);
-    //document.getElementById("color").style.color
     document.getElementById('link').setAttribute('src', 'Resources/'+val);
     
 }
@@ -127,4 +125,13 @@ function display_info(item_id)
     getInfoOnItem(item_id)
     
     
+}
+//This function saves added elements to local storage that key is "product" and separating it by coma ',' to get all elements id that added to basket
+function addToBasket(){
+    if (localStorage.getItem("product") != null ){
+        var text = localStorage.getItem("product")
+        text += ','
+        text += localStorage.getItem("id")
+    }
+    localStorage.setItem("product",text);
 }
