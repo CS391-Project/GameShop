@@ -102,18 +102,23 @@ function getPrice(item_id){
     var ivalue = item_list[item_id]
     var ipvalue = ivalue.split(',')
     var val = ipvalue[2]
-    document.getElementById("gameName").innerText = val;
+    document.getElementById("price").innerText = val;
 }
 function getLink(item_id){
     var ivalue = item_list[item_id]
     var ipvalue = ivalue.split(',')
     var val = ipvalue[3]
-    document.getElementById("gameName").innerText = val;
+   // var colorThief = new ColorThief();
+    //colorThief.getColor('Resources/'+val);
+    //document.getElementById("color").style.color
+    document.getElementById('link').setAttribute('src', 'Resources/'+val);
+    
 }
 function getDesc(item_id){
     var ivalue = itemDescription[item_id]
     var val = ivalue
-    document.getElementById("gameName").innerText = val;
+    console.log(val)
+    document.getElementById("desc").innerText = val;
 }
 
 function display_info(item_id)

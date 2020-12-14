@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Game Shop</title>
     <script type="text/javascript" src="functions.js"></script>
     <link rel="stylesheet" href="styles.css"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/color-thief.js"></script>
 </head>
-
+<header>
+    <h1>Game Shop</h1>
+</header>
+<style>
+    article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+</style>
 
 
 <body>
+    <section>
+        
+    </section>
+    <article>
+        <h1 id="gameName"></h1>
+        <h2 id="price"></h2>
+        <br />
+        <article>
+            <br />
+            <p id="desc"></p>
+        </article>
+        
+        <br />
+   <article>
+    <img id="link"></td>
+   </article>
+       
     
-    <p id="gameName"></p>
+   
 
     <script>
-
-    getName(localStorage.getItem("id"))
-    
-    
-    </script>
-    
-    <p id="desc",class="Description"></p>
-    <script>
+        getName(localStorage.getItem("id"))
         getDesc(localStorage.getItem("id"))
-    </script>
-
-    <p id="link"></p>
-    <script>
         getLink(localStorage.getItem("id"))
+        getPrice(localStorage.getItem("id"))
     </script>
+    <img src="Resources/cyperpunk2077.jpg" id="myimg" />
+
+    <div id="mydiv"></div>
+
+
+    <script>
+      $(window).ready(function(){
+        var sourceImage = document.getElementById("myimg");
+        var colorThief = new ColorThief();
+        var color = colorThief.getColor(sourceImage);
+        document.getElementById("mydiv").style.backgroundColor = "rgb(" + color + ")";
+       });
+    </script>
+    
+    
 
 </body>
 
