@@ -22,7 +22,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: deepskyblue;
+    background-color: rgb(3, 6, 7);
 }
 
 footer>p {
@@ -49,6 +49,6 @@ img {
 }
 
 table, td {
-    border: 1px solid deepskyblue;
+    border: 1px solid rgb(36, 46, 49);
     border-collapse: collapse;
 }

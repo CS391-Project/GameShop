@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Shop</title>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<header>
+    <h1>Game Shop</h1>
+</header>
+<nav>
+    <a href="game_Shop.html">Shop</a>
+    <a href="basket.html">Basket</a>
+    <a href="moreInfo.html">MoreInfo</a>
+</nav>
+
+<style>
+    article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: yellow;
+  padding: 13px;
+}
+    button {
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background: cyan;
+    }
+    body{
+        background: yellow;
+    }
+</style>
+
+
+<section>
+
+</section>
+<article>
+    <h1 id="gameName"></h1>
+    <h2 id="price"></h2>
+    <h2 id="color"></h2>
+    <br />
+    <article>
+        <br />
+        <p id="desc"></p>
+    </article>
+
+    <br />
+    <article>
+        <img id="link" width="250" height="250">
+        </td>
+    </article>
+
+
+
+    <script>
+        getName(localStorage.getItem("id"))
+        getDesc(localStorage.getItem("id"))
+        getLink(localStorage.getItem("id"))
+        getPrice(localStorage.getItem("id"))
+    </script>
+    <form action="http://localhost:3000/moreInfo.html" method="post">
+        <button type="button"onclick="addToBasket()" afterclick="alert('Added to basket')">Add to basket</button>
+    </form>
+
+</article>
+</body>
+
+
+
+
+    <footer>
+    <p> Best games for best prices</p>
+</footer>
+
+</html>
