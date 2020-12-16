@@ -1,14 +1,26 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     background-color: dodgerblue
 }
 
 header>h1 {
     color: white;
-    font-size: 30;
+    font-size: 30px;
     text-align: center;
 }
 
 nav {
+    width:100%;
+    margin-top: 80px;
+    margin-bottom: 15px;
     background-color: dodgerblue;
     text-align: center;
     word-spacing: 30px;
@@ -17,15 +29,16 @@ nav {
 
 nav>a {
     color: white;
-    font-size: 20;
+    font-size: 20px;
     word-spacing: 30px;
     font-weight: bold;
-    
+
 }
 
 
 footer {
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(3, 6, 7);
@@ -33,7 +46,7 @@ footer {
 
 footer>p {
     color: white;
-    font-size: 15;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -45,12 +58,12 @@ section {
 aside {
     position: absolute;
     left: 0;
-    font-size: 15;
+    font-size: 15px;
 }
 
 img {
-    width: 300;
-    height: 300;
+    width: 300px;
+    height: 300px;
     float: right;
 }
 
