@@ -13,11 +13,35 @@
 <nav>
     <a href="game_Shop.html">Shop</a>
     <a href="basket.html">Basket</a>
+    <a href="login.html">Login</a>
 </nav>
 
 <section>
     <h1>Basket</h1>
-    <p>Hello</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Developer</th>
+            <th>Review</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        <tbody id="Basket">
+
+        </tbody>
+
+        </thead>
+        <script> showBasket()</script>
+    </table>
+
+    <h2 id="basketTotalPrice">Total</h2>
+    <script> displayTotal()</script>
+
+    <h2>Checkout</h2>
+    <button type="button" onclick="checkout()">Checkout</button>
 </section>
 
 <footer>

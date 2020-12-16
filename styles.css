@@ -1,5 +1,5 @@
 header {
-    background-color: deepskyblue;
+    background-color: dodgerblue
 }
 
 header>h1 {
@@ -9,12 +9,18 @@ header>h1 {
 }
 
 nav {
-    background-color: deepskyblue;
+    background-color: dodgerblue;
+    text-align: center;
+    word-spacing: 30px;
+    font-weight: bold;
 }
 
 nav>a {
     color: white;
     font-size: 20;
+    word-spacing: 30px;
+    font-weight: bold;
+    
 }
 
 
@@ -22,7 +28,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: deepskyblue;
+    background-color: rgb(3, 6, 7);
 }
 
 footer>p {
@@ -49,6 +55,21 @@ img {
 }
 
 table, td {
-    border: 1px solid deepskyblue;
+    border: 1px solid rgb(36, 46, 49);
     border-collapse: collapse;
+}
+body{
+    background-color: white;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background: dodgerblue;
 }
