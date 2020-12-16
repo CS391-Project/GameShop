@@ -20,7 +20,7 @@
 
 <main class="item3">
     <h1>Basket</h1>
-    <table cellspacing="0" cellpadding="20">
+    <table cellspacing="0" cellpadding="20" id="basketTable">
         <thead>
         <tr>
             <th>Product Name</th>
@@ -36,15 +36,16 @@
         </tbody>
 
         </thead>
-        <script> showBasket()</script>
     </table>
 
-    <h2 class="centerText">Checkout</h2>
+    <div id="checkOutArea" style="color:black">
+        <h2 class="centerText">Checkout</h2>
 
-    <h3 class="centerText" id="basketTotalPrice">Total</h3>
-    <script> displayTotal()</script>
+        <h3 class="centerText" id="basketTotalPrice">Total</h3>
 
-    <button class="checkoutButton" type="button" onclick="checkout()">Checkout</button>
+        <button class="checkoutButton" type="button" onclick="checkout()">Checkout</button>
+    </div>
+
 </main>
 
 <footer class="item4">
@@ -53,4 +54,7 @@
 
 </div>
 </body>
+
+<script> displayTotal()</script>
+<script> showBasket()</script>
 </html>

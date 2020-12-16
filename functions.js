@@ -209,6 +209,7 @@ function checkout() {
 
 function showBasket()
 {
+
     /*
         <table>
         <thead>
@@ -225,6 +226,15 @@ function showBasket()
     var basketTable = document.getElementById('Basket');
     basketTable.innerHTML =''
     let productIDs = getProducts();
+    var basketTableDef = document.getElementById('basketTable');
+    var checkoutArea = document.getElementById('checkOutArea');
+
+    if (!productIDs.length) {
+        checkoutArea.style.visibility = 'hidden';
+        console.log('hide')
+        basketTableDef.innerHTML = '<h4>Your basket is empty. Please add some items to checkout !</h4>'
+
+    }
 
     var newHtml = "<tr>"
 
