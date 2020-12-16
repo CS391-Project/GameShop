@@ -144,7 +144,7 @@ table, tr, td {
     margin:0 auto;
     display:block;
     font-weight: bold;
-
+    width: 100%;
 }
 
 .centerText{
