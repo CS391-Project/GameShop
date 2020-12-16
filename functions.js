@@ -21,10 +21,18 @@ function fill_category()
 
 function display_Items(item_list)
 {
-    var text = "<tr>"
+    var text = ``;
 
+    /*
+            <div>
+            <img class="imgHome" src="Resources/gta5.jpg"  alt="sadfsa ">
+            <p>21412tl</p>
+            <button>asfas</button>
+        </div>
+     */
     for(i=0; i<item_list.length;i++)
     {
+        text += `<div>`
         var item = item_list[i]
         var parsed_item = item.split(",")
         var id = parsed_item[0]
@@ -34,15 +42,12 @@ function display_Items(item_list)
 
         var button_action = "display_info(this.name)"
 
+        text+= `<img class="imgHome" src="Resources/${link}"  alt="${name}">`
+        text+= `<p>${name}</p>`
+        text+= `<p>${price} TL</p>`
+        text+= `<button onclick="${button_action}" name="${id}" value="Info">More Info</button>`
 
-        text += "<td>" + name + "<br>Price: " + price + "<br> <input type=button onclick=" + button_action + " class=item name=" + id + " value=Info ></td>"
-        text += "<td><img src=" +"Resources/" + link + " alt=" + name + "></td>"
-
-        if((i+1) % 4 == 0)
-        {
-            text += "</tr>"
-            text += "<tr>"
-        }
+        text += `</div>`
     }
 
     document.getElementById("Items").innerHTML = text;

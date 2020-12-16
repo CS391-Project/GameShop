@@ -4,10 +4,7 @@ html, body {
 }
 
 header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
+
     background-color: dodgerblue
 }
 
@@ -19,8 +16,7 @@ header>h1 {
 
 nav {
     width:100%;
-    margin-top: 80px;
-    margin-bottom: 15px;
+
     background-color: dodgerblue;
     text-align: center;
     word-spacing: 30px;
@@ -35,13 +31,13 @@ nav>a {
 
 }
 
-
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    margin-top: 150px;
     width: 100%;
     background-color: rgb(3, 6, 7);
+    position: fixed;
+    bottom: 0;
+    left:0;
 }
 
 footer>p {
@@ -56,8 +52,6 @@ section {
 }
 
 aside {
-    position: absolute;
-    left: 0;
     font-size: 15px;
 }
 
@@ -85,4 +79,59 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     background: dodgerblue;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    flex-basis: 16.6666667%;
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+    line-height: 3px;
+    font-size: 30px;
+}
+
+.imgHome {
+    width: 300px;
+    height: 300px;
+    float: none;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: aside; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+.item5 { grid-area: nav; }
+
+.grid-container {
+
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'nav nav nav nav nav'
+    'aside main main main main'
+    'footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.grid-container-other {
+
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'nav nav nav nav nav'
+    'main main main main main'
+    'footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
 }

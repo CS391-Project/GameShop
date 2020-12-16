@@ -1,30 +1,32 @@
-<html>
+<body>
 
 <head>
     <title>Game Shop</title>
     <script type="text/javascript" src="functions.js"></script>
     <link rel="stylesheet" href="styles.css"/>
 </head>
+<body>
+<div class="grid-container-other">
 
-<header>
+<header class="item1">
     <h1>Game Shop</h1>
 </header>
 
-<nav>
+<nav class="item5">
     <a href="game_Shop.html">Shop</a>
     <a href="basket.html">Basket</a>
     <a href="login.html">Login</a>
 </nav>
 
-<section>
+<main class="item3">
 
     <h1>Login</h1>
 
 
-        <lablel for="mail">Email</label>
+        <label for="mail">Email</label>
         <input id="mail" type="email">
 
-        <lablel for="pass">Password</label>
+        <label for="pass">Password</label>
         <input id="pass" type="Password"><br>
 
         <button onclick="login()">Login</button>
@@ -32,27 +34,28 @@
 
     <h1>Register</h1>
 
-        <lablel for="register_mail">Email</label>
+        <label for="register_mail">Email</label>
         <input id="register_mail" type="email">
         </td></tr>
 
-        <lablel for="register_pass">Password</label>
+        <label for="register_pass">Password</label>
         <input id="register_pass" type="Password"><br>
 
         <button onclick="register()">Register</button>
 
     <h1>Admin</h1>
 
-        <lablel for="admin_pass">Code</label>
+        <label for="admin_pass">Code</label>
         <input id="admin_pass" type="Password"><br>
         <button onclick="reset_site()">Reset Site</button>
 
-</section>
+</main>
 
-<footer>
+<footer class="item4">
 
     <p> Best games for best prices</p>
 
 </footer>
-
+</div>
+</body>
 </html>
