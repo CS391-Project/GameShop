@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: deepskyblue;
 }
 
 header>h1 {
@@ -9,18 +9,12 @@ header>h1 {
 }
 
 nav {
-    background-color: Black;
-    text-align: center;
-    word-spacing: 30px;
-    font-weight: bold;
+    background-color: deepskyblue;
 }
 
 nav>a {
     color: white;
     font-size: 20;
-    word-spacing: 30px;
-    font-weight: bold;
-    
 }
 
 
@@ -57,19 +51,4 @@ img {
 table, td {
     border: 1px solid rgb(36, 46, 49);
     border-collapse: collapse;
-}
-body{
-    background-color: lightgray;
-}
-button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background: darkgrey;
 }
