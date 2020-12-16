@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: dodgerblue
 }
 
 header>h1 {
@@ -9,7 +9,7 @@ header>h1 {
 }
 
 nav {
-    background-color: Black;
+    background-color: dodgerblue;
     text-align: center;
     word-spacing: 30px;
     font-weight: bold;
@@ -59,7 +59,7 @@ table, td {
     border-collapse: collapse;
 }
 body{
-    background-color: lightgray;
+    background-color: white;
 }
 button {
     border: none;
@@ -71,5 +71,5 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background: darkgrey;
+    background: dodgerblue;
 }
