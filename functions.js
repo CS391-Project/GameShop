@@ -56,6 +56,7 @@ function display_Items(item_list)
 
 function apply_filter()
 {
+
     var filter_list = document.getElementsByClassName("filter")
     var filtered_categories = []
     var new_list = []
@@ -69,7 +70,13 @@ function apply_filter()
     {
         var item = item_list[i]
         var parsed_item = item.split(",")
-        if(filtered_categories.includes(parsed_item[4])) new_list.push(item_list[i])
+
+        if (!filtered_categories.length) {
+            new_list.push(item_list[i])
+        } else {
+
+            if(filtered_categories.includes(parsed_item[4])) new_list.push(item_list[i])
+        }
     }
 
     display_Items(new_list)
