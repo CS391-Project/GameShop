@@ -134,6 +134,10 @@ function addToBasket(){
         text = localStorage.getItem("id")
     }
     localStorage.setItem("product",text);
+<<<<<<< Updated upstream
+=======
+    alert("Item is added to your basket");
+>>>>>>> Stashed changes
 }
 
 function getProducts(){
