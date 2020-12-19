@@ -289,16 +289,33 @@ function register()
     var user_list = []
 
 
-    if(list == null) user_list.push([mail_address + ";" + pass])
+    if(list == null) 
+    {
+        user_list.push([mail_address + ";" + pass])
+        alert("User Registered")
+    }
     else  
     {
         user_list = list.split(",")
-        user_list.push([mail_address + ";" + pass])
+        console.log(user_list)
+        new_user = 1
+        for(i=0; i<user_list.length; i++)
+        {
+            temp_user = user_list[i].split(";")
+            if(temp_user[0] == mail_address) new_user = 0
+
+        }
+        
+        if(new_user) 
+        {
+            user_list.push([mail_address + ";" + pass])
+            alert("User Registered")
+        }
     }
 
     localStorage.setItem("user_list", user_list)
 
-    alert("User Registered")
+    
     
 }
 
