@@ -314,7 +314,7 @@ function register()
         localStorage.setItem("user_list", user_list)
         alert("User Registered")
     }
-    else  
+    else if(valid)  
     {
         user_list = list.split(",")
         console.log(user_list)
@@ -326,7 +326,7 @@ function register()
 
         }
         
-        if(new_user & valid) 
+        if(new_user)
         {
             user_list.push([mail_address + ";" + pass])
             localStorage.setItem("user_list", user_list)
