@@ -290,7 +290,6 @@ function login()
 
 function register()
 {
-    console.log("Registering")
 
     var mail_address = document.getElementById("register_mail").value;
     var pass = document.getElementById("register_pass").value;
@@ -299,7 +298,6 @@ function register()
     if(containsUpperCase(pass) & containsLowerCase(pass) & containsNumber(pass) & pass.length >= 4)
     {
         valid = 1
-        console.log("Valid")
     }
     else {
         alert("Password must contain at least one number, uppercase and lowercase character. Length must be at least 4 or more characters")
