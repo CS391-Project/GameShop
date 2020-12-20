@@ -262,6 +262,18 @@ function showBasket()
 
 }
 
+function containsUpperCase(pass) {
+    return (/[A-Z]/.test(pass));
+}
+
+function containsLowerCase(pass) {
+    return (/[a-z]/.test(pass));
+}
+
+function containsNumber(pass) {
+    return /\d/.test(pass);
+  }
+
 function login()
 {
     var mail_address = document.getElementById("mail").value;
@@ -282,6 +294,16 @@ function register()
 
     var mail_address = document.getElementById("register_mail").value;
     var pass = document.getElementById("register_pass").value;
+    var valid = 0
+
+    if(containsUpperCase(pass) & containsLowerCase(pass) & containsNumber(pass) & pass.length >= 4)
+    {
+        valid = 1
+        console.log("Valid")
+    }
+    else {
+        alert("Password must contain at least one number, uppercase and lowercase character. Length must be at least 4 or more characters")
+    }
 
     var list = localStorage.getItem("user_list")
 
@@ -289,7 +311,7 @@ function register()
     var user_list = []
 
 
-    if(list == null) 
+    if(list == null & valid) 
     {
         user_list.push([mail_address + ";" + pass])
         alert("User Registered")
@@ -306,7 +328,7 @@ function register()
 
         }
         
-        if(new_user) 
+        if(new_user & valid) 
         {
             user_list.push([mail_address + ";" + pass])
             alert("User Registered")
