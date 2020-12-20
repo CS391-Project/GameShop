@@ -308,10 +308,10 @@ function register()
 
     var user_list = []
 
-
     if(list == null & valid) 
     {
         user_list.push([mail_address + ";" + pass])
+        localStorage.setItem("user_list", user_list)
         alert("User Registered")
     }
     else  
@@ -329,11 +329,10 @@ function register()
         if(new_user & valid) 
         {
             user_list.push([mail_address + ";" + pass])
+            localStorage.setItem("user_list", user_list)
             alert("User Registered")
         }
     }
-
-    localStorage.setItem("user_list", user_list)
 
     
     
