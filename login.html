@@ -83,6 +83,7 @@ input[type=submit] {
 </head>
 <body>
 
+
 <div class="container">
   <form action="/game_Shop.html">
   <!-- Burada istenilen sayfaya yönlendirme yapabiliriz.-->
@@ -101,6 +102,18 @@ input[type=submit] {
   </form>
 </div>
 
+<div class="container">
+  <form action="/game_Shop.html">
+  <!-- Burada istenilen sayfaya yönlendirme yapabiliriz.-->
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
 <div id="message">
   <h3>Password must contain the following:</h3>
@@ -168,6 +181,21 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+
+
+
+<div class="container">
+  <form action="/game_Shop.html">
+  <!-- Burada istenilen sayfaya yönlendirme yapabiliriz.-->
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </script>
 <footer class="item4">
     <p> Best games for best prices</p>
